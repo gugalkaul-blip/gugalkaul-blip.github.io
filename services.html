@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Services — [Your Name]</title>
+<meta name="description" content="How to work with [Your Name]." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,500&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="wordmark" href="index.html">[Your Name]</a>
+    <nav class="site-nav" aria-label="Primary">
+      <a href="work.html">Work</a>
+      <a href="about.html">About</a>
+      <a href="services.html" aria-current="page">Services</a>
+      <a href="contact.html" class="nav-cta">Start a project</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<section class="page-header wrap">
+  <h1>Let's make something good</h1>
+  <p class="lede">A few of the ways people usually bring me in. If your project doesn't fit neatly into one of these, tell me about it anyway.</p>
+</section>
+
+<section class="wrap">
+  <div class="service-list">
+    <div class="service-row">
+      <h3>Packaging</h3>
+      <p>Labels, cartons and jars for food, drink and small-batch products — designed to hold up under studio lighting and under a shelf's worth of competitors.</p>
+    </div>
+    <div class="service-row">
+      <h3>Menus &amp; signage</h3>
+      <p>Menu design, chalkboards and in-store signage for restaurants and cafés, usually refreshed each season as the offering changes.</p>
+    </div>
+    <div class="service-row">
+      <h3>Murals</h3>
+      <p>Large-scale wall work for businesses, public spaces and commissions — from the first sketch through to painting it on site.</p>
+    </div>
+    <div class="service-row">
+      <h3>Brand identity</h3>
+      <p>Visual systems for brands — marks, colour, type and the illustration style that carries across everything from packaging to signage.</p>
+    </div>
+    <div class="service-row">
+      <h3>Custom commissions</h3>
+      <p>One-off original pieces for personal or special projects — gifts, portraits, invitations, anything that needs a bit of care.</p>
+    </div>
+  </div>
+</section>
+
+<section class="cta-band wrap">
+  <h2>Have a project in mind?</h2>
+  <a class="btn" href="contact.html">Start a project</a>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span class="copyright">© <span id="year"></span> [Your Name]</span>
+    <nav class="footer-links" aria-label="Footer">
+      <a href="work.html">Work</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</footer>
+
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>

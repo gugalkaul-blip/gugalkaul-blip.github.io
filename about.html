@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>About — [Your Name]</title>
+<meta name="description" content="A little about [Your Name], designer and illustrator." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,500&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="wordmark" href="index.html">[Your Name]</a>
+    <nav class="site-nav" aria-label="Primary">
+      <a href="work.html">Work</a>
+      <a href="about.html" aria-current="page">About</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html" class="nav-cta">Start a project</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<section class="page-header wrap">
+  <h1>The person behind the pictures</h1>
+</section>
+
+<section class="wrap about-grid">
+  <div class="about-portrait">
+    <div class="frame">
+      <img src="images/portrait.jpg" alt="[Your Name]"
+        onerror="this.parentElement.innerHTML='<div class=&quot;placeholder-art&quot;>Add images/portrait.jpg</div>'">
+    </div>
+  </div>
+  <div class="about-copy">
+    <p>
+      I'm a designer and illustrator making work for brands, restaurants
+      and the occasional stretch of wall. I studied [your background]
+      and have spent the last [X years] moving between packaging,
+      menus, murals and brand identity.
+    </p>
+    <p>
+      My work tends to start with a pencil and a bad first draft.
+      I like a brief with a physical constraint attached — a bottle
+      shape, a wall, a page that folds — and I'm happiest when there's
+      room for a little weirdness inside it.
+    </p>
+
+    <div class="fact-list">
+      <dl>
+        <dt>Based in</dt>
+        <dd>[Your City]</dd>
+      </dl>
+      <dl>
+        <dt>Selected clients</dt>
+        <dd>[Client], [Client], [Client]</dd>
+      </dl>
+      <dl>
+        <dt>Recognition</dt>
+        <dd>[Award or feature, if any]</dd>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<section class="wrap">
+  <h2 style="font-size:1.4rem; margin-bottom: 4px;">Things I love making</h2>
+  <div class="loves">
+    <span>Packaging</span>
+    <span>Restaurant menus</span>
+    <span>Murals</span>
+    <span>Brand identity</span>
+    <span>Editorial illustration</span>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span class="copyright">© <span id="year"></span> [Your Name]</span>
+    <nav class="footer-links" aria-label="Footer">
+      <a href="work.html">Work</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</footer>
+
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>

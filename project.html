@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Project — [Your Name]</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,500&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="wordmark" href="index.html">[Your Name]</a>
+    <nav class="site-nav" aria-label="Primary">
+      <a href="work.html" aria-current="page">Work</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html" class="nav-cta">Start a project</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<div id="project-root">
+  <section class="project-hero wrap">
+    <div class="frame" id="project-hero-frame"></div>
+    <h1 class="project-title" id="project-title"></h1>
+    <div class="project-meta">
+      <span><strong id="meta-client"></strong></span>
+      <span>Year: <strong id="meta-year"></strong></span>
+      <span>Category: <strong id="meta-category"></strong></span>
+    </div>
+  </section>
+
+  <section class="project-body wrap">
+    <p id="project-description"></p>
+  </section>
+
+  <section class="project-images wrap" id="project-images"></section>
+
+  <section class="wrap">
+    <a class="btn" href="contact.html">Like what you see? Start a project</a>
+  </section>
+
+  <nav class="project-nav wrap" aria-label="Other projects">
+    <a id="prev-link" href="#"></a>
+    <a id="next-link" href="#"></a>
+  </nav>
+</div>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span class="copyright">© <span id="year"></span> [Your Name]</span>
+    <nav class="footer-links" aria-label="Footer">
+      <a href="work.html">Work</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</footer>
+
+<script src="data/projects.js"></script>
+<script src="script.js"></script>
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>

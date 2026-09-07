@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Contact — [Your Name]</title>
+<meta name="description" content="Start a project with [Your Name]." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,500&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="wordmark" href="index.html">[Your Name]</a>
+    <nav class="site-nav" aria-label="Primary">
+      <a href="work.html">Work</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html" class="nav-cta" aria-current="page">Start a project</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<section class="page-header wrap">
+  <h1>Tell me about your idea</h1>
+  <p class="lede">The more detail you give, the faster I can tell you whether I'm a good fit and roughly what it'll cost.</p>
+</section>
+
+<!--
+  GitHub Pages only serves static files — there's no built-in form
+  handler like Netlify has. This form instead posts to FormSubmit.co,
+  a free service that forwards submissions straight to your inbox
+  with no account or API key needed.
+
+  BEFORE THIS WORKS, replace "youremail@example.com" below with your
+  real email address. The first time someone submits the form,
+  FormSubmit sends YOU a one-time confirmation email — you have to
+  click the link in it once to activate the form. After that, every
+  submission is emailed to you automatically.
+-->
+<form
+  class="enquiry-form wrap"
+  method="POST"
+  action="https://formsubmit.co/youremail@example.com"
+>
+  <input type="hidden" name="_subject" value="New project enquiry" />
+  <input type="hidden" name="_next" value="success.html" />
+  <input type="hidden" name="_captcha" value="false" />
+  <p class="visually-hidden">
+    <label>Don't fill this out if you're human: <input type="text" name="_honey" /></label>
+  </p>
+
+  <div class="field-row">
+    <div class="field">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required />
+    </div>
+    <div class="field">
+      <label for="company">Company / brand</label>
+      <input type="text" id="company" name="company" />
+    </div>
+  </div>
+
+  <div class="field">
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" required />
+  </div>
+
+  <div class="field">
+    <label for="project-type">Project type</label>
+    <select id="project-type" name="project_type">
+      <option>Packaging</option>
+      <option>Menu / signage</option>
+      <option>Mural</option>
+      <option>Brand identity</option>
+      <option>Custom commission</option>
+      <option>Something else</option>
+    </select>
+  </div>
+
+  <div class="field-row">
+    <div class="field">
+      <label for="budget">Approximate budget</label>
+      <input type="text" id="budget" name="budget" placeholder="e.g. $2,000–$5,000" />
+    </div>
+    <div class="field">
+      <label for="timeline">Expected timeline</label>
+      <input type="text" id="timeline" name="timeline" placeholder="e.g. 6 weeks" />
+    </div>
+  </div>
+
+  <div class="field">
+    <label for="details">Tell me more about the project</label>
+    <textarea id="details" name="details" rows="6" required></textarea>
+  </div>
+
+  <button type="submit" class="btn">Send project enquiry</button>
+  <p class="form-note">I read every message myself and usually reply within a few days.</p>
+</form>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span class="copyright">© <span id="year"></span> [Your Name]</span>
+    <nav class="footer-links" aria-label="Footer">
+      <a href="work.html">Work</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</footer>
+
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
